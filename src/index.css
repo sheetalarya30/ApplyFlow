@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 font-sans antialiased;
+  }
+}
+
+/* Custom modern scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Subtle Glassmorphism Card Style */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* Status colors and accents */
+.status-applied {
+  @apply bg-blue-50 text-blue-700 border-blue-200;
+}
+.status-in-review {
+  @apply bg-amber-50 text-amber-700 border-amber-200;
+}
+.status-assessment {
+  @apply bg-purple-50 text-purple-700 border-purple-200;
+}
+.status-interview {
+  @apply bg-indigo-50 text-indigo-700 border-indigo-200;
+}
+.status-offered {
+  @apply bg-emerald-50 text-emerald-700 border-emerald-200;
+}
+.status-rejected {
+  @apply bg-rose-50 text-rose-700 border-rose-200;
+}
+.status-withdrawn {
+  @apply bg-slate-100 text-slate-600 border-slate-300;
+}
